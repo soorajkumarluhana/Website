@@ -1,37 +1,60 @@
-body{
-    background-color: gray !important;
+.bgimg{
+    background-image: url("images/Cover\ photo.jpg") !important;
+    background-size: 100% 100% !important;
+    background-attachment: fixed !important;
+    width: 100% !important;
+    height: 650px !important;
 }
-
-.navbarContent{
-    font-weight: bolder !important;
-    color: black !important;
+.covertitle{
+    padding-top: 120px !important;
+box-sizing: border-box !important;
 }
-.nav{
-    padding-left: 70px !important;
+.covertitle h2{
+    font-size: 35px;
 }
-.navbar-brand{
-    font-weight: 900 !important;
-    font-size: 20px !important;
-
-} 
-
-.cover{
-    background-image:url("images/Cover\ photo.jpg");
-    background-repeat: no-repeat;
-    max-width: 100%;
-    min-width:100% ;
-    height: 500px;
+.covertitle h1{
+    font-size: 70px;
+    font-weight: bolder;
     
 }
-.jumbotron{
-text-align: center !important;
-background: transparent !important;
-color: white !important;
-margin-top: 70px;
+
+.covertitle input{
+width: 250px !important;
 }
-.formcontrol{
-    margin-top: 11px !important;
+
+/* ....................service............. */
+.ourservice{
+    padding: 100px 0px 50px 0px;
+    height: 700px !important;
 }
-.search{
-    width: 300px !important;
+.ourservice h1{
+    font-size: 50px;
+    font-weight: bold;
 }
+.rowsetting{
+margin: 80px !important;
+}
+.rowsetting h2{
+    font-weight: bold !important;
+    margin-top: 20px !important;
+    font-size: 30px !important;
+}
+
+.iconsetting{
+    border-radius: 50px !important;
+    width: 70px !important;
+    height: 70px !important;
+    background-color: rgb(24, 24, 177);
+}
+.iconmargin{
+    padding: 10px 0px 2px 0px;
+}
+
+
+
+
+
+
+
+
+
