@@ -1,9 +1,20 @@
+ 
+
+ body{
+     background-color: gainsboro !important;
+ }
 .bgimg{
-    background-image: url("images/Cover\ photo.jpg") !important;
+    background-image: url("images/Power\ Distribution.jpg") !important;
     background-size: 100% 100% !important;
     background-attachment: fixed !important;
     width: 100% !important;
     height: 650px !important;
+}
+.navbarbrand{
+    font-size: 25px !important;
+}
+.navbarbrand:hover{
+    color: blue !important;
 }
 .covertitle{
     padding-top: 120px !important;
@@ -25,7 +36,6 @@ width: 250px !important;
 /* ....................service............. */
 .ourservice{
     padding: 100px 0px 50px 0px;
-    height: 700px !important;
 }
 .ourservice h1{
     font-size: 50px;
@@ -49,6 +59,61 @@ margin: 80px !important;
 .iconmargin{
     padding: 10px 0px 2px 0px;
 }
+
+.loginform{
+    
+    padding: 150px 450px 150px 450px !important;
+}
+.articlesrow{
+    padding-top: 60px !important;
+}
+.Articlesunderline{
+   text-decoration: none !important;
+   color:black !important;
+}
+.Articlesunderline:hover{
+    color: blue !important;
+}
+.Articlesunderline h4{
+    font-weight: bold !important;
+}
+
+.footersetting{
+    background-color: white !important;
+    margin-top: 60px !important;
+}
+.footerheading{
+    font-weight: bold !important;
+    font-size: 25px !important;    
+}
+
+.copyrightfooter{
+    background-color: black !important;
+    height: 60px !important;
+}
+.copyrighttext{
+font-weight: bold !important;
+color:  white;
+font-size: 20px !important;
+text-align: center !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
