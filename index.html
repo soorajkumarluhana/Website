@@ -3,286 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electrical Website</title>
+    <title> Bootstrap Template </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
-    <div class="bgimg">
-<nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark">
-<div class="container">
-  <a href="" class="navbar-brand font-weight-bold navbarbrand"> <img src="images/footer logo.jpg" height="40" alt="logo"> Electrical Tutorials</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#demo">  
-    <span class="navbar-toggler-icon">  </span>
+    <!----navbar -->
+<div id="header">   
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light text-white fixed-top">
+<div id="navbarlogo" class="navbar-brand"><img src="images/Nav logo.jpg" alt="logo" width="50px" height="40px">Electrical Tutorial
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse text-center" id="demo">
-    <ul class="navbar-nav ml-auto">
-     <li class=""><a href="#" class="nav-link text-white">HOME</a></li>
-     <li class="nav-item"><a href="#" class="nav-link text-white" >EE Academy</a></li>
-     <li class="nav-item"><a href="#" class="nav-link text-white" >Technical Article</a></li>
-     <li class="nav-item"><a href="#" class="nav-link text-white" >Learn EE</a></li>
-     <li class="nav-item"><a href="#" class="nav-link text-white" >EE Tools</a></li>
-    </ul>
-    <ul class="navbar-nav ml-auto">
-      <form action="#">
-        <div class="mx-2">
-           <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-           <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
-        </div>
-      </form>
-    </ul>
-  </div>
+<div id="navmenu" class="collapse navbar-collapse text-center">
+  <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">EE Academy</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Technical Article</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Learn EE</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">EE Tools</a></li>
+      <li class="nav-item"><a href="#" class="btn"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+      <li class="nav-item"><a href="#" class="btn ml-1"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign Up</a></li>
+    </ul>  
 </div>
-</nav>
-
-<!--Login Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="loginModalLabel">Login</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</nav>    -->
+<!-- cover photo -->
+<div id="coverheading" class="row">
+      <div class="col text-center">
+          <h1 class="font-weight-bold text-white display-6">Welcome to Electrical Tutorial</h1>
+          <p class="font-weight-bold text-white">It'S NICE TO MEET YOU</p>
+          <input type="search" placeholder="search"><button type="button"><i class="fa fa-search"></i></button>
       </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Remember me </label>
-          </div>
-          <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-      </div>
+</div>
+</div>
+<!-- End........................... -->
+<div id="servicebox" class="container text-center">
+    <div class="row">
+        <div class="col-12"><h1 class="display-4 serviceitem">Services</h1>
+            <p>Best Electrical Engineering Books: Our Top 7 of 2020</p></div>
+<div class="row subservicebox">
+<div class="col-lg-4">
+<div>      
+<div class="d-block m-auto iconbackground">
+<i class="fa fa-play fa-3x iconsize text-white"></i></div></div>
+<h2 class="serviceheading">Electrical Tutorials</h2>
+<p>To learn about basic Electrical Engineering, check out our articles on Transformers, Electrical Symbols, Alternators, DC Motors, Induction Motors, Star 
+    Delta Starter, Lenz’s law, Faraday’s law, and DOL Starters. We also review the best electrical engineering books.</p>  
     </div>
-  </div>
-</div>
-<!--Sign Up Modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="signupModalLabel">Create account</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Username</label>
-            <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <button type="submit" class="btn btn-primary">Sign Up</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End -->
-<div class="container text-center text-white covertitle">
-<h2>Welcome To Electrical Tutorial</h2>
-<h1>IT'S NICE TO MEET YOU </h1>
-<form class="example" action="action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit" ><i class="fa fa-search"></i></button>  
-</form> 
-</div>
-  </div>
 
-<!-- END -->
-<div class="container ourservice text-center">
-  <h1>SERVICES</h1>
-  <p>Best Electrical Engineering Books: Our Top 7 of 2020</p>
-<div class="row rowsetting">
-<div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
-  <div class="iconsetting d-block m-auto">
-    <i class="fa fa-play fa-3x text-white iconmargin" aria-hidden="true"></i> </div>
-  <h2>Electrical Tutorials</h2>
-  <p> To learn about basic Electrical Engineering, check out our articles on Transformers, Electrical Symbols, Alternators, DC Motors, Induction Motors, Star 
-    Delta Starter, Lenz’s law, Faraday’s law, and DOL Starters. We also review the best electrical engineering books. </p> 
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
-  <div class="iconsetting d-block m-auto">
-    <i class="fa fa-bookmark fa-3x text-white iconmargin" aria-hidden="true"></i></div>
-  <h2>Electrical Articles</h2>
-  <p> To learn about basic Electrical Engineering, check out our articles on Transformers, Electrical Symbols, Alternators, DC Motors, Induction Motors, 
-    Star Delta Starter, Lenz’s law, Faraday’s law, and DOL Starters. We also review the best electrical engineering books. </p> 
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
-    <div class="iconsetting d-block m-auto">
-      <i class="fa fa-book fa-3x text-white iconmargin" aria-hidden="true"></i></div>
-    <h2>Electrcial Books</h2>
-    <p> To learn about basic Electrical Engineering, check out our articles on Transformers, Electrical Symbols, Alternators, DC Motors, Induction Motors, Star 
-      Delta Starter, Lenz’s law, Faraday’s law, and DOL Starters. We also review the best electrical engineering books. </p> 
-  </div>
+    <div class="col-lg-4">
+        <div>    
+        <div class="d-block m-auto iconbackground">
+        <i class="fa fa-bookmark fa-3x iconsize text-white"></i></div></div>
+        <h2 class="serviceheading">Electrical Articles</h2>
+        <p>To learn about basic Electrical Engineering, check out our articles on Transformers, Electrical Symbols, Alternators, DC Motors, Induction Motors, Star 
+            Delta Starter, Lenz’s law, Faraday’s law, and DOL Starters. We also review the best electrical engineering books.</p>  
+            </div>
+
+
+            <div class="col-lg-4">
+                <div>    
+                <div class="d-block m-auto iconbackground">
+                <i class="fa fa-book fa-3x iconsize text-white"></i></div></div>
+                <h2 class="serviceheading">Electrcial Books</h2>
+                <p>To learn about basic Electrical Engineering, check out our articles on Transformers, Electrical Symbols, Alternators, DC Motors, Induction Motors, Star 
+                    Delta Starter, Lenz’s law, Faraday’s law, and DOL Starters. We also review the best electrical engineering books.</p>  
+                    </div>
 </div>
 </div>
-<!-- .............END........ -->    
+</div>
+<!-- .................End............. -->
 <div class="container">
 
-      <div class="row articlerow">
-        <div class="col-md-4">
-          <article class="card mb-4">
-            <header class="card-header">
-              <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/electric-motor/" target="_blank">
-                <h4 class="card-title">Electric Motor Articles</h4>
-              </a>
-            </header>
-            <a href="https://www.electrical4u.com/electrical-engineering-articles/electric-motor/" target="_blank">
-              <img class="card-img" src="images/Electrical Motor.jpg" alt="Electrical Image">
+    <div class="row articlerow">
+      <div class="col-lg-4 col-md-6">
+        <article class="card mb-4">
+          <header class="card-header">
+            <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/electric-motor/" target="_blank">
+              <h4 class="card-title">Electric Motor Articles</h4>
             </a>
-            <div class="card-body">
-              <p class="card-text">We discuss various types of electric motors including 
-                DC Motors, Induction Motors, Synchronous Motors, and other special types of motors. We explain the working principles, characteristics, uses and testing of electric motors. This category is a collection of knowledge about all things related to electric motors. </p>
-            </div>
-          </article><!-- /.card -->
+          </header>
+          <a href="https://www.electrical4u.com/electrical-engineering-articles/electric-motor/" target="_blank">
+            <img class="card-img" src="images/Electrical Motor.jpg" alt="Electrical Image">
+          </a>
+          <div class="card-body">
+            <p class="card-text">We discuss various types of electric motors including 
+              DC Motors, Induction Motors, Synchronous Motors, and other special types of motors. We explain the working principles, characteristics, uses and testing of electric motors. This category is a collection of knowledge about all things related to electric motors. </p>
+          </div>
+        </article><!-- /.card -->
 
-          <article class="card mb-4">
-            <header class="card-header">
-              <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/measurement/" target="_blank">
-                <h4 class="card-title">Electrical Measurement Articles</h4>
-              </a>
-            </header>
-            <a href="https://www.electrical4u.com/electrical-engineering-articles/measurement/" target="_blank">
-              <img class="card-img" src="images/Electrical Measurements.jpg" alt="Electrial Articles">
+        <article class="card mb-4">
+          <header class="card-header">
+            <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/measurement/" target="_blank">
+              <h4 class="card-title">Electrical Measurement Articles</h4>
             </a>
-            <div class="card-body">
-              <p class="card-text">We discuss various types of electrical and electronic measurements. An explanation of different bridge circuits, sensors, cathode ray oscilloscopes, digital meters, potentiometers, transducers, and more. We explain working principles of various measuring instruments and measuring systems. </p>
-            </div>
-          </article><!-- /.card -->
-        </div>
-        <div class="col-md-4">
-          <article class="card mb-4">
-            <header class="card-header">
-              <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/generation/" target="_blank">
-                <h4 class="card-title">Electrical Power Generation Articles</h4>
-              </a>
-            </header>
-            <a href="https://www.electrical4u.com/electrical-engineering-articles/generation/" target="_blank">
-              <img class="card-img" src="images/Power Generation.jpg" alt="Power Generation">
+          </header>
+          <a href="https://www.electrical4u.com/electrical-engineering-articles/measurement/" target="_blank">
+            <img class="card-img" src="images/Electrical Measurements.jpg" alt="Electrial Articles">
+          </a>
+          <div class="card-body">
+            <p class="card-text">We discuss various types of electrical and electronic measurements. An explanation of different bridge circuits, sensors, cathode ray oscilloscopes, digital meters, potentiometers, transducers, and more. We explain working principles of various measuring instruments and measuring systems. </p>
+          </div>
+        </article><!-- /.card -->
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <article class="card mb-4">
+          <header class="card-header">
+            <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/generation/" target="_blank">
+              <h4 class="card-title">Electrical Power Generation Articles</h4>
             </a>
-            <div class="card-body">
-              <p class="card-text">Learn about all types of electrical power generation systems including thermal, hydro, nuclear power generation, solar panels, wind energy electric generation, cogeneration and more. We explain the working principles and characteristics of different components of power plants, like boilers, turbines, economisers, solar panel, and wind turbines. </p>
-            </div>
-          </article><!-- /.card -->
+          </header>
+          <a href="https://www.electrical4u.com/electrical-engineering-articles/generation/" target="_blank">
+            <img class="card-img" src="images/Power Generation.jpg" alt="Power Generation">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Learn about all types of electrical power generation systems including thermal, hydro, nuclear power generation, solar panels, wind energy electric generation, cogeneration and more. We explain the working principles and characteristics of different components of power plants, like boilers, turbines, economisers, solar panel, and wind turbines. </p>
+          </div>
+        </article><!-- /.card -->
 
-          <article class="card mb-4">
-            <header class="card-header">
-              <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/transmission/" target="_blank">
-                <h4 class="card-title">Power Transmission System Articles</h4>
-              </a>
-            </header>
-            <a href="https://www.electrical4u.com/electrical-engineering-articles/transmission/" target="_blank">
-              <img class="card-img" src="images/Power Transmission.jpg" alt="Power Transmission">
+        <article class="card mb-4">
+          <header class="card-header">
+            <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/transmission/" target="_blank">
+              <h4 class="card-title">Power Transmission System Articles</h4>
             </a>
-            <div class="card-body">
-              <p class="card-text">Articles related to electrical power transmission systems. Learn about different transmission parameters, different materials used to construct a transmission line, HVDC systems, and different theoretical approaches to power transmission. We discuss the design aspects of transmission towers and their foundations. </p>
-            </div>
-          </article><!-- /.card -->
+          </header>
+          <a href="https://www.electrical4u.com/electrical-engineering-articles/transmission/" target="_blank">
+            <img class="card-img" src="images/Power Transmission.jpg" alt="Power Transmission">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Articles related to electrical power transmission systems. Learn about different transmission parameters, different materials used to construct a transmission line, HVDC systems, and different theoretical approaches to power transmission. We discuss the design aspects of transmission towers and their foundations. </p>
+          </div>
+        </article><!-- /.card -->
         </div>
-        <div class="col-md-4">
-          <article class="card mb-4">
-            <header class="card-header">
-              <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/transformer/" target="_blank">
-                <h4 class="card-title">Electrical Transformer Articles</h4>
-              </a>
-            </header>
-            <a href="https://www.electrical4u.com/electrical-engineering-articles/transformer/" target="_blank">
-              <img class="card-img" src="images/Power Transformer.jpg" alt="Power Tranformer">
+      <div class="col-lg-4 col-md-6">
+        <article class="card mb-4">
+          <header class="card-header">
+            <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/transformer/" target="_blank">
+              <h4 class="card-title">Electrical Transformer Articles</h4>
             </a>
-            <div class="card-body">
-              <p class="card-text">We discuss all things related to transformers – from fundamental theory to modern advancement. Learn about all different types of transformers – two winding transformers, autotransformers, power and distribution transformers, single phase and three phase transformers – and more. </p>
-            </div>
-          </article><!-- /.card -->
+          </header>
+          <a href="https://www.electrical4u.com/electrical-engineering-articles/transformer/" target="_blank">
+            <img class="card-img" src="images/Power Transformer.jpg" alt="Power Tranformer">
+          </a>
+          <div class="card-body">
+            <p class="card-text">We discuss all things related to transformers – from fundamental theory to modern advancement. Learn about all different types of transformers – two winding transformers, autotransformers, power and distribution transformers, single phase and three phase transformers – and more. </p>
+          </div>
+        </article><!-- /.card -->
 
-          <article class="card mb-4">
-            <header class="card-header">
-              <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/switchgear/" target="_blank">
-                <h4 class="card-title">Switchgear Articles</h4>
-              </a>
-            </header>
-            <a href="https://www.electrical4u.com/electrical-engineering-articles/switchgear/" target="_blank">
-              <img class="card-img" src="images/SwitchGear.jpg" alt="SwitchGear">
+        <article class="card mb-4">
+          <header class="card-header">
+            <a class="Articlesunderline" href="https://www.electrical4u.com/electrical-engineering-articles/switchgear/" target="_blank">
+              <h4 class="card-title">Switchgear Articles</h4>
             </a>
-            <div class="card-body">
-              <p class="card-text">Learn about all three types of electrical switchgear systems – low voltage switchgear, medium voltage switchgear and high voltage switchgear – and the individual components of an electrical switchgear system. We explain the mechanisms, testing, commissioning, and maintenance of different parts of switchgear – including like CBs, CTs, CVTs, PT, isolators, and more. </p>
-            </div>
-          </article><!-- /.card -->
-        </div>
+          </header>
+          <a href="https://www.electrical4u.com/electrical-engineering-articles/switchgear/" target="_blank">
+            <img class="card-img" src="images/SwitchGear.jpg" alt="SwitchGear">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Learn about all three types of electrical switchgear systems – low voltage switchgear, medium voltage switchgear and high voltage switchgear – and the individual components of an electrical switchgear system. We explain the mechanisms, testing, commissioning, and maintenance of different parts of switchgear – including like CBs, CTs, CVTs, PT, isolators, and more. </p>
+          </div>
+        </article><!-- /.card -->
       </div>
     </div>
-    <!-- ............END............ -->
-    
-    <section class="container-fluid footersetting">
-      <footer class="position-relative z-index-10 d-print-none">
-          <!-- Main block - menus, subscribe form-->
-          <div class="py-6 bg-gray-200 text-muted"> 
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8 col-10 ">
-                  <div class="font-weight-bold text-uppercase text-dark mb-3 footerheading">Follow Us</div>
-                  <ul class="list-inline">
-                    <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="facebook"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="twitter"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="linkedin"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="youtube"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-10">
-                  <h6 class="text-uppercase text-dark mb-3 footerheading">GET LATEST UPDATE</h6>
-                  <p class="mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
-                  <form action="#" id="newsletter-form">
-                    <div class="input-group mb-3">
-                      <input class="form-control bg-transparent border-dark border-right-0 " type="email" placeholder="Your Email Address" aria-label="Your Email Address">
-                      <div class="input-group-append">
-                        <button class="btn btn-outline-dark border-left-0" type="submit"> <i class="fa fa-paper-plane text-lg"></i></button>
-                      </div>
+  </div>
+<!-- End............... -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="followus">Follow us</div>
+                    <div class="socialicon">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="facebook"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="twitter"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="linkedin"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="youtube"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a></li>
+                          </ul>
                     </div>
-                  </form>
-                </div>
-              </div>
             </div>
-          </div>
-          <!-- Copyright section of the footer-->
-          <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
-            <div class="container copyrightfooter">
-              <div class="row align-items-center">
-                <div class="col-10 text-center copyrighttext ">
-                  <p class="text-sm mb-md-0">© 2020, All rights reserved.</p>
-                </div> 
-              </div>
-            </div>
-          </div>
-        </footer>
-        </section>   
+        
+        <div class="col-xl-4 offset-xl-4 col-lg-5 offset-lg-3 col-md-7 offset-md-1">
+            <div class="getlatestupdate">Get Latest Update</div>
+        <div><p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p></div>
+        <div><input type="email" placeholder="Your Email Address">
+        <button type="submit"><i class="fa fa-paper-plane"></i></button>
+        </div>
+    </div>               
+    </div>
+    </div>
+<div class="row text-center mt-5">
+    <div class="col"><h5>© 2020, All rights reserved.</h5></div>
+</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+</div>
+<!-- End................... -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>    
 </body>
 </html>

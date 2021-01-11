@@ -1,69 +1,105 @@
- 
+ body{ 
+    background-color: #ecf0f1; 
+}
 
- body{
-     background-color: gainsboro !important;
- }
-.bgimg{
-    background-image: url("images/Power\ Distribution.jpg") !important;
-    background-size: 100% 100% !important;
-    background-attachment: fixed !important;
-    width: 100% !important;
-    height: 650px !important;
+
+/* header */
+#header{
+    background-image: url("./images/Power\ Distribution.jpg");
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
-.navbarbrand{
-    font-size: 25px !important;
+
+#navbar{
+    background-color: rgba(44,62,80,0.7);
 }
-.navbarbrand:hover{
-    color: blue !important;
-}
-.covertitle{
-    padding-top: 120px !important;
-box-sizing: border-box !important;
-}
-.covertitle h2{
-    font-size: 35px;
-}
-.covertitle h1{
-    font-size: 70px;
+#navbarlogo{
+    margin-left: 10px;
     font-weight: bolder;
-    
+    font-size: 25px;
+    color: white;
 }
-
-.covertitle input{
-width: 250px !important;
-}
-
-/* ....................service............. */
-.ourservice{
-    padding: 100px 0px 50px 0px;
-}
-.ourservice h1{
-    font-size: 50px;
+#navmenu a{
+    color: white;
     font-weight: bold;
 }
-.rowsetting{
-margin: 80px !important;
+
+#navmenu li a:hover{
+ background-color: rgb(52,73,94);
 }
-.rowsetting h2{
-    font-weight: bold !important;
-    margin-top: 20px !important;
-    font-size: 30px !important;
+#coverheading{
+    margin-top: 200px;
+    padding-bottom: 200px;
+}
+/* ............................. */
+@media(max-width:565px){
+#coverheading h1{
+  font-weight: lighter;
+  font-size: 30px;
+}
+}
+@media(max-width:441px ){
+    #coverheading h1{
+        font-weight: lighter;
+        font-size: 20px;
+      }   
+}
+/* ............................... */
+#coverheading p{
+     font-size: 70px;
+}
+@media(max-width:764px){
+    #coverheading p{
+        font-size: 55px;
+   }   
+}
+@media(max-width: 606px){
+    #coverheading p{
+        font-size: 40px;
+   }   
+}
+@media(max-width: 441px){
+    #coverheading p{
+        font-size: 30px;
+   }   
+}
+/* ................................. */
+
+#coverheading i.fa{
+    background-color: white;
+    color:black;
+    display: inline-block;
 }
 
-.iconsetting{
-    border-radius: 50px !important;
-    width: 70px !important;
-    height: 70px !important;
-    background-color: rgb(24, 24, 177);
+#coverheading input{
+    width: 250px;
 }
-.iconmargin{
-    padding: 10px 0px 2px 0px;
-}
+/* End................ */
 
-.loginform{
-    
-    padding: 150px 450px 150px 450px !important;
+#servicebox{
+    margin-top: 40px;
 }
+#servicebox h1{
+font-weight: bolder;
+font-size: 60px;
+}
+#servicebox h2{
+   font-weight: bold;
+}
+#servicebox div.iconbackground{
+    border-radius: 50px;
+    background-color: blue;
+    width: 70px;
+    height: 70px;   
+}
+#servicebox i.iconsize{
+    padding: 10px 0px 10px 0px;
+}
+#servicebox div.subservicebox{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+/* End............ */
 .articlesrow{
     padding-top: 60px !important;
 }
@@ -77,42 +113,43 @@ margin: 80px !important;
 .Articlesunderline h4{
     font-weight: bold !important;
 }
+/* ...............End....................... */
 
-.footersetting{
-    background-color: white !important;
-    margin-top: 60px !important;
-}
-.footerheading{
-    font-weight: bold !important;
-    font-size: 25px !important;    
+#footer{
+    margin-top: 40px;
+    background-color: rgba(44,62,80,0.8);
 }
 
-.copyrightfooter{
-    background-color: black !important;
-    height: 60px !important;
+#footer div.followus{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 35px;
+    text-align: justify;
+
 }
-.copyrighttext{
-font-weight: bold !important;
-color:  white;
-font-size: 20px !important;
-text-align: center !important;
+#footer li a i{
+    color: whitesmoke;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#footer li a i:hover{
+    color: gray;
+}
+#footer div.getlatestupdate{
+    font-weight: bolder;
+ font-size: 35px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: whitesmoke;
+}
+#footer input{
+    width: 300px;
+}
+#footer div.copyright{
+    margin-top: 40px;
+}
+#footer  h5{
+    font-weight: bolder;
+    color: grey
+}
 
 
 
